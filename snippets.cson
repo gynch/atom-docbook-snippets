@@ -882,7 +882,7 @@
 		'prefix': 'imageobject'
 		'body': """
 		<imageobject>
-			${1}
+			<imagedata fileref="${1}" format="${2:PNG}" scalefit="${3:0}" />
 		</imageobject>
 		"""
 	'imageobjectco':
@@ -1329,7 +1329,9 @@
 		'prefix': 'orderedlist'
 		'body': """
 		<orderedlist>
-			${1}
+			<listitem>
+				${1}
+			</listitem>
 		</orderedlist>
 		"""
 	'orgdiv':
@@ -2636,3 +2638,4 @@
 		'body': """
 		<![CDATA[${1}]]>
     """
+
